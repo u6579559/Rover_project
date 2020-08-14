@@ -1,0 +1,44 @@
+'0' = Stop
+'8' = Up
+'2' = Down
+'4' = Left
+'6' = Right
+'A' = Auto Grab
+'B' = Auto Release 
+'C' = Grab
+'D' = Release
+'E' = Rotate Left
+'F' = Rotate Right
+
+
+
+
+CONTROLS:
+Release - 	Release the rover into autonomous mode
+Grab    - 	Grab the rover back into manual mode
+Rotate Left - 	Toggle wall alignmment function
+
+
+
+
+
+High-level functions we have in the program:
+
+void turnLeft()	-- Turn 90 degrees
+void turnRight()
+
+float getLeftDistance()		-- These will turn the servo automatically if necessary
+float getForwardsDistance()
+
+
+
+Auto behaviour (basic behaviour, will need to change this after testing):
+
+- START
+- Start moving forwards
+- Check left. If there is a passage left, stop, turn left, go back to START
+- Check forwards. If there is no room left, stop, turn right, go back to START
+
+- If ever there is no ping, maybe move forwards a bit, left a bit, right a bit, until there is a ping?
+
+
